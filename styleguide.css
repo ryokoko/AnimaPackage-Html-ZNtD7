@@ -1,0 +1,156 @@
+:root {
+  --body-font-family: "Inter", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 16px;
+  --body-letter-spacing: 0px;
+  --body-line-height: normal;
+  --body-font-style: normal;
+  --small-font-family: "Inter", Helvetica;
+  --small-font-weight: 300;
+  --small-font-size: 12px;
+  --small-letter-spacing: 0px;
+  --small-line-height: normal;
+  --small-font-style: normal;
+  --caption-font-family: "Inter", Helvetica;
+  --caption-font-weight: 300;
+  --caption-font-size: 14px;
+  --caption-letter-spacing: 0px;
+  --caption-line-height: normal;
+  --caption-font-style: normal;
+  --body-bold-font-family: "Inter", Helvetica;
+  --body-bold-font-weight: 600;
+  --body-bold-font-size: 16px;
+  --body-bold-letter-spacing: 0px;
+  --body-bold-line-height: normal;
+  --body-bold-font-style: normal;
+  --h-secondary-font-family: "Inter", Helvetica;
+  --h-secondary-font-weight: 400;
+  --h-secondary-font-size: 16px;
+  --h-secondary-letter-spacing: 0px;
+  --h-secondary-line-height: normal;
+  --h-secondary-font-style: normal;
+  --h-secondary-bold-font-family: "Inter", Helvetica;
+  --h-secondary-bold-font-weight: 700;
+  --h-secondary-bold-font-size: 20px;
+  --h-secondary-bold-letter-spacing: 0px;
+  --h-secondary-bold-line-height: normal;
+  --h-secondary-bold-font-style: normal;
+  --h-primary-font-family: "Inter", Helvetica;
+  --h-primary-font-weight: 700;
+  --h-primary-font-size: 32px;
+  --h-primary-letter-spacing: 0px;
+  --h-primary-line-height: normal;
+  --h-primary-font-style: normal;
+  --m3-body-large-font-family: "Roboto", Helvetica;
+  --m3-body-large-font-weight: 400;
+  --m3-body-large-font-size: 16px;
+  --m3-body-large-letter-spacing: 0.5px;
+  --m3-body-large-line-height: 24px;
+  --m3-body-large-font-style: normal;
+  --m3-body-small-font-family: "Roboto", Helvetica;
+  --m3-body-small-font-weight: 400;
+  --m3-body-small-font-size: 12px;
+  --m3-body-small-letter-spacing: 0.4000000059604645px;
+  --m3-body-small-line-height: 16px;
+  --m3-body-small-font-style: normal;
+  --collection-1-brand-beige: rgba(227, 205, 164, 1);
+  --collection-1-brand-grey: rgba(126, 130, 122, 1);
+  --collection-1-brand-rose: rgba(199, 121, 102, 1);
+  --collection-1-neutral-grey100: rgba(255, 255, 255, 1);
+  --collection-1-neutral-grey200: rgba(234, 234, 234, 1);
+  --collection-1-neutral-grey300: rgba(191, 191, 191, 1);
+  --collection-1-neutral-grey400: rgba(149, 149, 149, 1);
+  --collection-1-neutral-grey500: rgba(106, 106, 106, 1);
+  --collection-1-neutral-grey600: rgba(64, 64, 64, 1);
+  --collection-1-neutral-grey700: rgba(21, 21, 21, 1);
+  --m3-schemes-surface-container-lowest: rgba(255, 255, 255, 1);
+  --m3-schemes-outline-variant: rgba(202, 196, 208, 1);
+  --m3-schemes-on-surface: rgba(29, 27, 32, 1);
+  --m3-schemes-on-surface-variant: rgba(73, 69, 79, 1);
+  --m3-schemes-surface: rgba(254, 247, 255, 1);
+  --m3-schemes-outline: rgba(121, 116, 126, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-m3-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-m3-mode="light"] {
+  --m3-schemes-surface-container-lowest: rgba(255, 255, 255, 1);
+  --m3-schemes-outline-variant: rgba(202, 196, 208, 1);
+  --m3-schemes-on-surface: rgba(29, 27, 32, 1);
+  --m3-schemes-on-surface-variant: rgba(73, 69, 79, 1);
+  --m3-schemes-surface: rgba(254, 247, 255, 1);
+  --m3-schemes-outline: rgba(121, 116, 126, 1);
+}
+
+[data-m3-mode="light-high-contrast"] {
+  --m3-schemes-surface-container-lowest: rgba(255, 255, 255, 1);
+  --m3-schemes-outline-variant: rgba(69, 65, 74, 1);
+  --m3-schemes-on-surface: rgba(0, 0, 0, 1);
+  --m3-schemes-on-surface-variant: rgba(37, 35, 43, 1);
+  --m3-schemes-surface: rgba(253, 247, 255, 1);
+  --m3-schemes-outline: rgba(69, 65, 74, 1);
+}
+
+[data-m3-mode="light-medium-contrast"] {
+  --m3-schemes-surface-container-lowest: rgba(255, 255, 255, 1);
+  --m3-schemes-outline-variant: rgba(125, 121, 131, 1);
+  --m3-schemes-on-surface: rgba(29, 27, 32, 1);
+  --m3-schemes-on-surface-variant: rgba(69, 65, 74, 1);
+  --m3-schemes-surface: rgba(253, 247, 255, 1);
+  --m3-schemes-outline: rgba(97, 93, 103, 1);
+}
+
+[data-m3-mode="dark"] {
+  --m3-schemes-surface-container-lowest: rgba(15, 13, 19, 1);
+  --m3-schemes-outline-variant: rgba(73, 69, 79, 1);
+  --m3-schemes-on-surface: rgba(230, 224, 233, 1);
+  --m3-schemes-on-surface-variant: rgba(202, 196, 208, 1);
+  --m3-schemes-surface: rgba(20, 18, 24, 1);
+  --m3-schemes-outline: rgba(147, 143, 153, 1);
+}
+
+[data-m3-mode="dark-high-contrast"] {
+  --m3-schemes-surface-container-lowest: rgba(15, 13, 19, 1);
+  --m3-schemes-outline-variant: rgba(206, 200, 212, 1);
+  --m3-schemes-on-surface: rgba(255, 255, 255, 1);
+  --m3-schemes-on-surface-variant: rgba(255, 249, 255, 1);
+  --m3-schemes-surface: rgba(20, 18, 24, 1);
+  --m3-schemes-outline: rgba(206, 200, 212, 1);
+}
+
+[data-m3-mode="dark-medium-contrast"] {
+  --m3-schemes-surface-container-lowest: rgba(15, 13, 19, 1);
+  --m3-schemes-outline-variant: rgba(134, 129, 139, 1);
+  --m3-schemes-on-surface: rgba(255, 249, 255, 1);
+  --m3-schemes-on-surface-variant: rgba(206, 200, 212, 1);
+  --m3-schemes-surface: rgba(20, 18, 24, 1);
+  --m3-schemes-outline: rgba(166, 161, 171, 1);
+}
+
+[data-m3-mode="monochrome-light"] {
+  --m3-schemes-surface-container-lowest: rgba(255, 255, 255, 1);
+  --m3-schemes-outline-variant: rgba(198, 198, 198, 1);
+  --m3-schemes-on-surface: rgba(27, 27, 27, 1);
+  --m3-schemes-on-surface-variant: rgba(71, 71, 71, 1);
+  --m3-schemes-surface: rgba(249, 249, 249, 1);
+  --m3-schemes-outline: rgba(119, 119, 119, 1);
+}
+
+[data-m3-mode="monochrome-dark"] {
+  --m3-schemes-surface-container-lowest: rgba(14, 14, 14, 1);
+  --m3-schemes-outline-variant: rgba(71, 71, 71, 1);
+  --m3-schemes-on-surface: rgba(226, 226, 226, 1);
+  --m3-schemes-on-surface-variant: rgba(198, 198, 198, 1);
+  --m3-schemes-surface: rgba(19, 19, 19, 1);
+  --m3-schemes-outline: rgba(145, 145, 145, 1);
+}

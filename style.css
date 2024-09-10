@@ -320,13 +320,34 @@ body {
 
 .device-frame .text-wrapper-4 {
   position: relative;
-  width: fit-content;
+  width: 50%;
+  max-width: 100%;
   font-family: var(--body-bold-font-family);
-  font-weight: var(--body-bold-font-weight);
   color: var(--collection-1-neutral-grey600);
-  font-size: var(--body-bold-font-size);
+  font-size: 16px;
   letter-spacing: var(--body-bold-letter-spacing);
   line-height: var(--body-bold-line-height);
   white-space: nowrap;
   font-style: var(--body-bold-font-style);
+  text-align: center;
+  background-color: var(--collection-1-brand-beige);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  
+}
+a {
+  color: var(--collection-1-neutral-grey600);
+}
+
+a:hover{
+  color: var(--collection-1-brand-rose);
+  transition: all 0.3s ease;
 }
